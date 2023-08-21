@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="domain.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<podcasts>
+    <podcast id="123">
+        <Name>Think like a monk</Name>
+        <HostName>Jay Shetty</HostName>
+        <GuestName>Dr. Joe Despanzo</GuestName>
+        <Topic>Gene mutation using mindset</Topic>
+        <Duration>01:05:00</Duration>
+        <Date>2002-09-24</Date>
+        <Langugage>English</Langugage>
+        <Review>Nice to know that we can change whatever we want to some extent and not blame
+                our genes</Review>
+        <Listeners>23</Listeners>
+    </podcast>
+    <podcast id="456">
+        <Name>Improve your coding skills</Name>
+        <HostName>W3schools</HostName>
+        <GuestName>Experts</GuestName>
+        <Topic>BlockChain</Topic>
+        <Duration>01:25:00</Duration>
+        <Date>2023-05-24</Date>
+        <Langugage>English</Langugage>
+        <Review>learning was helpful as a beiginner,i was able to understand the basic concepts</Review>
+        <Listeners>23</Listeners>
+    </podcast>
+</podcasts>

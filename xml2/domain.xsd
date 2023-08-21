@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="podcasts">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="podcast" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Name" type="xs:string" />
+                            <xs:element name="HostName" type="xs:string" />
+                            <xs:element name="GuestName" type="xs:string" />
+                            <xs:element name="Topic" type="xs:string" />
+                            <xs:element name="Duration" type="xs:time" />
+                            <xs:element name="Date" type="xs:date" />
+                            <xs:element name="Langugage" type="xs:string" />
+                            <xs:element name="Review" type="xs:string" />
+                            <xs:element name="Listeners" type="xs:integer" />
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="Duration">
+        <xs:restriction base="xs:time">
+            <xs:minInclusive value="00:20:00" />
+            <xs:maxInclusive value="02:00:00" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="Langugae">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="English" />
+            <xs:enumeration value="French" />
+            <xs:enumeration value="Hindi" />
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

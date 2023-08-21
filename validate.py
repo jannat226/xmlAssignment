@@ -1,5 +1,6 @@
 import xmlschema
-xml_file = "products.xml"
+
+xml_file = "product.xml"
 xsd_file = "product.xsd"
 
 validator = xmlschema.XMLSchema(xsd_file)

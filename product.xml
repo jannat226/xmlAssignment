@@ -4,7 +4,7 @@
   <product id="A123">
     <name>Iphone</name>
     <price>500</price>
-    <quantity>300</quantity>
+    <quantity>600</quantity>
     <category>Electronics</category>
   </product>
   <product id="A456">
